@@ -26,7 +26,7 @@
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
-	      	com.despegar.uns.analizer.configuration
+	      	com.iceti.lobo.config
       	  </param-value>
 	</context-param>
 
@@ -48,7 +48,7 @@
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
 			<param-value>
-				com.iceti.lobo
+				com.iceti.lobo.config
             </param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
