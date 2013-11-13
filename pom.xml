@@ -1,0 +1,93 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.iceti.lobo</groupId>
+	<artifactId>lobo01</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>lobo-01</name>
+	<description>Lobo 01 fired</description>
+
+	<modules>
+		<module>lobo-domain</module>
+		<module>lobo-web</module>
+	</modules>
+
+	<dependencyManagement>
+		<dependencies>
+
+			<!-- Apache Commons Collections -->
+			<dependency>
+				<groupId>commons-collections</groupId>
+				<artifactId>commons-collections</artifactId>
+				<version>3.2.1</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.mail</groupId>
+				<artifactId>mail</artifactId>
+				<version>1.4.4</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.activation</groupId>
+				<artifactId>activation</artifactId>
+				<version>1.1.1</version>
+			</dependency>
+			<!-- Misc -->
+			<dependency>
+			    <groupId>org.apache.commons</groupId>
+			    <artifactId>commons-lang3</artifactId>
+			    <version>3.1</version>
+			</dependency>
+			<dependency>
+				<groupId>joda-time</groupId>
+				<artifactId>joda-time</artifactId>
+				<version>2.3</version>
+			</dependency>
+		</dependencies>
+
+	</dependencyManagement>
+	<!-- SCM -->
+	<scm>
+		<connection>scm:https://github.com/iceti/lobo01.git</connection>
+		<developerConnection>scm:https://github.com/iceti/lobo01.git</developerConnection>
+		<url>https://github.com/iceti/lobo01.git</url>
+	</scm>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<version>2.5</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.6</version>
+				<configuration>
+					<argLine>-Xmx1536m -XX:MaxPermSize=160M</argLine>
+				</configuration>
+			</plugin>
+			<!-- Release PlugIn -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.1</version>
+				<configuration>
+					<tagBase>https://github.com/iceti/lobo01.git</tagBase>
+					<preparationGoals>clean install</preparationGoals>
+					<goals>clean deploy</goals>
+					<updateBranchVersions>true</updateBranchVersions>
+					<updateWorkingCopyVersions>true</updateWorkingCopyVersions>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
+<!--
+					<checkModificationExcludes>
+						<checkModificationExclude>uns-analizer-env.properties</checkModificationExclude>
+					</checkModificationExcludes>
+-->
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
