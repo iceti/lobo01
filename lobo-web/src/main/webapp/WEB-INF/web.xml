@@ -10,41 +10,16 @@
 		<param-name>webAppRootKey</param-name>
 		<param-value>lobo01</param-value>
 	</context-param>
-
-	<!-- Configure ContextLoaderListener to use AnnotationConfigWebApplicationContext 
-		instead of the default XmlWebApplicationContext -->
-	<context-param>
-		<param-name>contextClass</param-name>
-		<param-value>
-	          org.springframework.web.context.support.AnnotationConfigWebApplicationContext
-	      </param-value>
-	</context-param>
-
-	<!-- Configuration locations must consist of one or more comma- or space-delimited 
-		fully-qualified @Configuration classes. Fully-qualified packages may also 
-		be specified for component-scanning -->
-	<context-param>
-		<param-name>contextConfigLocation</param-name>
-		<param-value>
-	      	com.iceti.lobo.config
-      	  </param-value>
-	</context-param>
-
+<!-- 
 	<servlet>
 		<servlet-name>spring</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-		<!-- Configure ContextLoaderListener to use AnnotationConfigWebApplicationContext 
-			instead of the default XmlWebApplicationContext -->
 		<init-param>
 			<param-name>contextClass</param-name>
 			<param-value>
 				org.springframework.web.context.support.AnnotationConfigWebApplicationContext
             </param-value>
 		</init-param>
-		<!-- Configuration for Spring Dispatcher Servlet (web-specific beans, such 
-			as controllers, REST config, URL mappers, etc): Configuration locations must 
-			consist of one or more comma- or space-delimited fully-qualified @Configuration 
-			classes. Fully-qualified packages may also be specified for component-scanning -->
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
 			<param-value>
@@ -53,8 +28,12 @@
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
-
-
+-->
+	<servlet>
+		<servlet-name>spring</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
