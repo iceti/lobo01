@@ -48,12 +48,12 @@
 	<!-- Error Codes-->
 	<error-page>
 		<error-code>404</error-code>
-		<location>/jsp/error/error404.jsp</location>
+		<location>/WEB-INF/jsp/error/error404.jsp</location>
 	</error-page>
 	
 	<error-page>
 		<error-code>500</error-code>
-		<location>/jsp/error/stackTraceManager.jsp</location>
+		<location>/WEB-INF/jsp/error/stackTraceManager.jsp</location>
 	</error-page>
 
     <session-config>

@@ -97,6 +97,7 @@
 			    <version>2.3.5.RELEASE</version>
 			</dependency>
 -->
+<!--
 			<dependency>
 			    <groupId>ch.qos.logback</groupId>
 			    <artifactId>logback-core</artifactId>
@@ -111,6 +112,12 @@
 			    <groupId>ch.qos.logback</groupId>
 			    <artifactId>logback-examples</artifactId>
 			    <version>1.0.13</version>
+			</dependency>
+-->
+			<dependency>
+				<groupId>log4j</groupId>
+				<artifactId>log4j</artifactId>
+				<version>1.2.17</version>
 			</dependency>
 			<dependency>
 			    <groupId>org.slf4j</groupId>
@@ -145,7 +152,7 @@
 				<version>15.0</version>
 			</dependency>
 			<dependency>
-				<groupId>aspectj</groupId>
+				<groupId>org.aspectj</groupId>
 				<artifactId>aspectjrt</artifactId>
 				<version>1.5.4</version>
 			</dependency>

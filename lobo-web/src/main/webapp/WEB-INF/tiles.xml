@@ -5,14 +5,12 @@
 <tiles-definitions>
 
 	<!-- Default Main Template -->
-    <definition name="mainTemplate" template="/jsp/template/mainTemplate.jsp" />
+    <definition name="mainTemplate" template="/WEB-INF/jsp/template/mainTemplate.jsp" />
 
 	<!-- PLain Views -->    
     <definition name="index" extends="mainTemplate" template="/jsp/index.jsp">
     	<put-attribute name="title" value="Home Page" />
-        <put-attribute name="body" value="/jsp/index.jsp" />
+        <put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
     </definition>
-    
-    <definition name="success" template="/jsp/monitor.jsp" />
     
 </tiles-definitions>
