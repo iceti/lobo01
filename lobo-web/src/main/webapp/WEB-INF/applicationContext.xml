@@ -45,8 +45,9 @@
 	<!-- Take note of the order. Since we're using TilesViewResolver as well 
 		We need to define which ViewResolver is called first. We chose this InternalResourceViewResolver 
 		to be at the bottom order -->
+		<!-- 
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver"
-		p:prefix="/jsp/" p:suffix=".jsp" p:order="1" />
-		
+		p:prefix="/WEB-INF/jsp/" p:suffix=".jsp" p:order="1" />
+		 -->
 </beans>

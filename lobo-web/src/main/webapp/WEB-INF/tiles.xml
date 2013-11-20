@@ -8,7 +8,7 @@
     <definition name="mainTemplate" template="/WEB-INF/jsp/template/mainTemplate.jsp" />
 
 	<!-- PLain Views -->    
-    <definition name="index" extends="mainTemplate" template="/jsp/index.jsp">
+    <definition name="index" extends="mainTemplate">
     	<put-attribute name="title" value="Home Page" />
         <put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
     </definition>
