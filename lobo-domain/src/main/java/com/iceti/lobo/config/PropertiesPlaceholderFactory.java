@@ -6,10 +6,10 @@ import org.springframework.beans.factory.config.PropertyPlaceholderConfigurer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
+//@Configuration
 public class PropertiesPlaceholderFactory {
 
-	@Bean
+//	@Bean
 	public PropertyPlaceholderConfigurer getPropertyPlaceholderConfigurer() {
 		PropertyPlaceholderConfigurer propertyPlaceholderConfigurer = new PropertyPlaceholderConfigurer();
 		Properties properties = new Properties();
