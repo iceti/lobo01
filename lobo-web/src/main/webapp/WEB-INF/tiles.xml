@@ -12,5 +12,9 @@
     	<put-attribute name="title" value="Home Page" />
         <put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
     </definition>
+    <definition name="product-search" extends="mainTemplate">
+    	<put-attribute name="title" value="Product" />
+        <put-attribute name="body" value="/WEB-INF/jsp/product.jsp" />
+    </definition>
     
 </tiles-definitions>

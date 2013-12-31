@@ -10,7 +10,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png" /> -->
 		
-		<title><tiles:getAsString name="title" />LOBO01</title>
+		<title>LOBO01 - <tiles:getAsString name="title" /></title>
 		
 		<link rel="stylesheet" type="text/css" media="screen" href="${pageContext.request.contextPath}/css/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" media="screen" href="${pageContext.request.contextPath}/css/bootstrap-theme.css" />
@@ -27,7 +27,7 @@
 	</head>
 	<body>
 		<%@include file="navbar.jsp" %>
-		<div class="container">
+		<div id="main-container" class="container">
 			<tiles:insertAttribute name="body"/>	
     	</div> <!-- /container -->
 		<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-1.10.2.min.js"></script>

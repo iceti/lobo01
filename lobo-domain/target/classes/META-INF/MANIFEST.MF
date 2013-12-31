@@ -5,9 +5,10 @@ Class-Path: commons-collections-3.2.1.jar log4j-1.2.17.jar slf4j-api-1
  ar spring-context-3.2.5.RELEASE.jar spring-aop-3.2.5.RELEASE.jar aopa
  lliance-1.0.jar spring-beans-3.2.5.RELEASE.jar spring-expression-3.2.
  5.RELEASE.jar hibernate-core-4.2.7.Final.jar antlr-2.7.7.jar jboss-lo
- gging-3.1.0.GA.jar dom4j-1.6.1.jar javassist-3.18.1-GA.jar jboss-tran
+ gging-3.1.0.GA.jar dom4j-1.6.1.jar javassist-3.18.0-GA.jar jboss-tran
  saction-api_1.1_spec-1.0.1.Final.jar hibernate-jpa-2.0-api-1.0.1.Fina
- l.jar hibernate-commons-annotations-4.0.2.Final.jar cglib-2.2.jar asm
- -3.1.jar mysql-connector-java-5.1.9.jar h2-1.3.174.jar guava-15.0.jar
-  aspectjrt-1.5.4.jar
+ l.jar hibernate-commons-annotations-4.0.2.Final.jar spring-jdbc-3.2.5
+ .RELEASE.jar spring-tx-3.2.5.RELEASE.jar cglib-2.2.jar asm-3.1.jar my
+ sql-connector-java-5.1.26.jar h2-1.3.174.jar guava-15.0.jar aspectjrt
+ -1.5.4.jar spring-orm-3.2.5.RELEASE.jar aspectjweaver-1.6.6.jar
 

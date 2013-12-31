@@ -1,0 +1,4 @@
+12-30 14:56:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "PRODUCT" no encontrada
+Table "PRODUCT" not found; SQL statement:
+alter table PRODUCT drop constraint FK_6jjc28h6skw3nn9uwvft26g5m [42102-174]

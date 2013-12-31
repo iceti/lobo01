@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 
 @MappedSuperclass
-public abstract class Identificable extends Base {
+public abstract class Identificable extends Model {
 
 	private static final long serialVersionUID = 1L;
 
