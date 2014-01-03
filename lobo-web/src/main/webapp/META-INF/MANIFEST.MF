@@ -11,10 +11,11 @@ Class-Path: lobo01-domain.jar commons-collections-3.2.1.jar log4j-1.2.
   spring-jdbc-3.2.5.RELEASE.jar spring-tx-3.0.7.RELEASE.jar cglib-2.2.
  jar asm-3.1.jar mysql-connector-java-5.1.26.jar h2-1.3.174.jar guava-
  15.0.jar aspectjrt-1.5.4.jar spring-orm-3.2.5.RELEASE.jar aspectjweav
- er-1.6.6.jar tiles-jsp-2.2.2.jar tiles-servlet-2.2.2.jar tiles-core-2
- .2.2.jar tiles-api-2.2.2.jar commons-digester-2.0.jar commons-beanuti
- ls-1.8.0.jar tiles-template-2.2.2.jar jstl-1.2.jar spring-web-3.2.5.R
- ELEASE.jar spring-webmvc-3.2.5.RELEASE.jar spring-security-core-3.1.3
- .RELEASE.jar spring-security-web-3.1.3.RELEASE.jar spring-security-co
- nfig-3.1.3.RELEASE.jar
+ er-1.6.6.jar jackson-core-asl-1.9.13.jar jackson-mapper-asl-1.9.13.ja
+ r javax.inject-1.jar tiles-jsp-2.2.2.jar tiles-servlet-2.2.2.jar tile
+ s-core-2.2.2.jar tiles-api-2.2.2.jar commons-digester-2.0.jar commons
+ -beanutils-1.8.0.jar tiles-template-2.2.2.jar jstl-1.2.jar spring-web
+ -3.2.5.RELEASE.jar spring-webmvc-3.2.5.RELEASE.jar spring-security-co
+ re-3.1.3.RELEASE.jar spring-security-web-3.1.3.RELEASE.jar spring-sec
+ urity-config-3.1.3.RELEASE.jar
 

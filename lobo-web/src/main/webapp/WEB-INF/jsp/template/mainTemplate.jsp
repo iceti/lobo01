@@ -15,6 +15,7 @@
 		<link rel="stylesheet" type="text/css" media="screen" href="${pageContext.request.contextPath}/css/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" media="screen" href="${pageContext.request.contextPath}/css/bootstrap-theme.css" />
 		<link rel="stylesheet" type="text/css" media="screen" href="${pageContext.request.contextPath}/css/main.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="${pageContext.request.contextPath}/css/theme.bootstrap.css" />
 		
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,14 +24,19 @@
 	      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 	    <![endif]-->		
 		<tiles:insertAttribute name="header" ignore="true" />
-
+		<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="${pageContext.request.contextPath}/js/Commons.js"></script>
+		<script type="text/javascript" src="${pageContext.request.contextPath}/js/AjaxCommons.js"></script>
+		<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.metadata.js"></script>
+		<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.tablesorter.min.js"></script>
+		<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.tablesorter.widgets.min.js"></script>
+		<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.tablesorter.pager.min.js"></script>
 	</head>
 	<body>
 		<%@include file="navbar.jsp" %>
 		<div id="main-container" class="container">
 			<tiles:insertAttribute name="body"/>	
     	</div> <!-- /container -->
-		<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-1.10.2.min.js"></script>
-		<script type="text/javascript" src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
 	</body>
 </html>

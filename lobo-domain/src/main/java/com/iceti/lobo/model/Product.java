@@ -17,7 +17,7 @@ public class Product extends Identificable {
 	@Column(name = "DESCRIPTION", length = 100)
 	private String description;
 	
-	@Column(name = "CODE", length = 25)
+	@Column(name = "CODE", length = 100)
 	private String code;
 	
 	@Column(name = "PRICE", precision = BIG_DECIMAL_PRECISION, scale = BIG_DECIMAL_SCALE)

@@ -8,6 +8,8 @@ import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import org.codehaus.jackson.annotate.JsonIgnore;
+
 import com.google.common.collect.Lists;
 
 @Entity
@@ -20,6 +22,7 @@ public class ProductType extends Identificable {
 	private String description;
 
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "productType")
+	@JsonIgnore
 	private List<Product> products = Lists.newArrayList();
 	
 	/**

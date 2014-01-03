@@ -183,7 +183,21 @@
 			   <artifactId>javassist</artifactId>
 			   <version>3.18.0-GA</version>
 			</dependency>
-
+			<dependency>
+			    <groupId>org.codehaus.jackson</groupId>
+			    <artifactId>jackson-core-asl</artifactId>
+			    <version>1.9.13</version>
+			</dependency>
+			<dependency>
+			    <groupId>org.codehaus.jackson</groupId>
+			    <artifactId>jackson-mapper-asl</artifactId>
+			    <version>1.9.13</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.inject</groupId>
+				<artifactId>javax.inject</artifactId>
+				<version>1</version>
+			</dependency>
 		</dependencies>
 
 	</dependencyManagement>
